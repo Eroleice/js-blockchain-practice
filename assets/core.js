@@ -111,7 +111,7 @@ class Blockchain{
     }
 
     createGenesisBlock() {
-        return new Block("2018-1-1 @ 0:0:0", "This is little small start... by Eroleice", "0");
+        return new Block("2018-1-1 @ 0:0:0", "This is just a little small start... by Eroleice", "0");
     }
 
     getLatestBlock() {
