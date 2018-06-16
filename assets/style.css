@@ -1,0 +1,133 @@
+* {
+	font-family: 'Microsoft Yahei';
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	float: left;
+	display: block;
+	height: 100%;
+}
+
+.panel {
+	background-color: #eee;
+	width: 30%;
+	text-align: center;
+}
+
+.board {
+	width: 70%;
+}
+
+.input-board {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin-top: 30px;
+}
+
+.fake-board {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 200px;
+}
+
+.check-board {
+	float: left;
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.check-board p {
+	font-size: 11px;
+}
+
+.data-board {
+	text-align: center;
+	height: 50%;
+	overflow-y: scroll;
+}
+
+.chain-board {
+	background-color: #ddd;
+	height: 50%;
+	overflow-y: scroll;
+	text-align: center;
+}
+
+.button {
+	padding: 5px;
+	width: 90px;
+	margin: 10px 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: .8rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+
+.th {
+  display: none;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.th > .td {
+  white-space: normal;
+  justify-content: center;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+.tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.chain-json {
+	margin: auto;
+	margin-top: 8px;
+	width: 95%;
+	height: 90%;
+}
