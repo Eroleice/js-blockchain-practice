@@ -111,7 +111,7 @@ class Blockchain{
     }
 
     createGenesisBlock() {
-        return new Block("2018-1-1 @ 0:0:0", "简单的一小步...... © 夜樱 PROJECT-NEKO.COM, 2016 ALL RIGHTS RESERVED.", "0");
+        return new Block("2018-1-1 @ 0:0:0", "This is little small start... by Eroleice", "0");
     }
 
     getLatestBlock() {
@@ -156,6 +156,7 @@ function buildBlock() {
 }
 
 bc = new Blockchain();
+document.getElementById("chain-json").value = JSON.stringify(bc, null, 4);
 
 function start() {	
 	loop = setInterval(buildBlock, 60000);
