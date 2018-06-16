@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Block Chain Demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+    <div class="panel container">
+        <div class="input-board">
+            <p>型号：
+                <input type="text" list="id_list" id="input-type" />
+            </p>
+            <datalist id="id_list">
+                <option label="I型" value="GNTCO-23" />
+                <option label="II型" value="LEIGX-84" />
+                <option label="III型" value="IXNGL-92" />
+            </datalist>
+            <p>数量：
+                <input type="input" id="input-amount" />
+            </p>
+            <p>单号：
+                <input type="input" id="input-receipt" />
+            </p>
+            <p>
+                <button type="button" class="button" onclick="genData();">随机生成</button>
+                <button type="button" class="button" onclick="insertData();">提交</button>
+            </p>
+        </div>
+        <div class="fake-board">
+            <p>序列：
+                <input type="input" id="fake-order" />
+            </p>
+            <p>型号：
+                <input type="text" list="fake_list" id="fake-type" />
+            </p>
+            <datalist id="fake_list">
+                <option label="I型" value="GNTCO-23" />
+                <option label="II型" value="LEIGX-84" />
+                <option label="III型" value="IXNGL-92" />
+            </datalist>
+            <p>数量：
+                <input type="input" id="fake-amount" />
+            </p>
+            <p>单号：
+                <input type="input" id="fake-receipt" />
+            </p>
+            <p>
+                <button type="button" class="button" onclick="genFake();">随机生成</button>
+                <button type="button" class="button" onclick="fakeData();">造假</button>
+            </p>
+        </div>
+        <div class="check-board">
+            <p>
+                <button type="button" class="button" onclick="start();">开始</button>
+                <button type="button" class="button" onclick="clearInterval(loop);">停止</button>
+                <button type="button" class="button" onclick="check();">检测</button>
+            </p>
+            <p><a href="https://github.com/Eroleice/js-blockchain-practice" target="_blank">Source Code on Github</a></p>
+            <p>© 夜樱 PROJECT-NEKO.COM, 2016 ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+    <div class="board container">
+        <div class="data-board">
+            <div class="table">
+                <div class="tr th">
+                    <div class="td" style="flex-grow: 2;">
+                        单号
+                    </div>
+                    <div class="td">
+                        型号
+                    </div>
+                    <div class="td">
+                        数量
+                    </div>
+                    <div class="td">
+                        时间
+                    </div>
+                    <div class="td">
+                        录入情况
+                    </div>
+                </div>
+				<span id="data-table"></span>
+            </div>
+        </div>
+        <div class="chain-board">
+			<textarea id="chain-json" class="chain-json" readonly="readonly"></textarea>
+        </div>
+    </div>
+	<script src="assets/sha256.js"></script>
+    <script src="assets/core.js"></script>
+</body>
+
+</html>
