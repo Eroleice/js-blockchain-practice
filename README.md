@@ -2,6 +2,8 @@
 
 总看到有人提到区块链，于是决定自己做一个区块链存储系统来练练手，使用JavaScript。
 
+[Live Demo](http://lab.project-neko.com/blockchain)
+
 ## Credits
 
 [Savjee](https://www.youtube.com/channel/UCnxrdFPXJMeHru_b4Q_vTPQ)的[Youtube视频](https://www.youtube.com/watch?v=zVqczFZr124)给了我很多的帮助，是我在网上找到的最好的区块链入门教程！
